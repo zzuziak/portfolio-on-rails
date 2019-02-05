@@ -5,7 +5,9 @@
     "@rails/webpacker": "3.5",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "typed": "^0.3.3",
+    "typed.js": "^2.0.10"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
