@@ -1,2 +1,32 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row">
+  <h2 class="col-xs-10 offset-xs-1 col-md-8 offset-md-2 role-typed">I'm a developer / manager / sport freak</h2>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <% @roles.each do |role| %>
+
+    <div class="carousel-item <%= role.name == "fullstack developer" ? "active" : "" %>">
+      <div class="row">
+        <div class="col-xs-10 offset-xs-1 col-md-8 offset-md-2 role">
+          <h2 class="role-name"><%= role.name %></h2>
+          <p class="role-description"><%= role.description %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <i class="fas fa-arrow-circle-left" aria-hidden="true"></i>
+    <span class="sr-only" style="color: black;">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
