@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Role.destroy_all
+Project.destroy_all
 
 fullstack = Role.create!({
 name: "fullstack developer",
@@ -27,3 +28,27 @@ doer = Role.create!({
     name: "doer.",
     description: "Coming up with new ideas, organizing people to do things together, planning events, simplifying life and looking for valuable people. I just need to do things, I’ll be happy to do something with you."
     })
+
+travelfit = Project.create!({
+  name: "TRAVELFIT",
+  description: "Explore sport events anywhere you go!",
+  stack: "RUBY ON RAILS | JS (ES6) | PSQL",
+  url: "http://travelfit.club",
+  photo: Rails.root.join("app/assets/images/travelfit.png").open
+  })
+
+domyjob = Project.create!({
+  name: "DO MY JOB",
+  description: "Try any job you'd like. Pilot? Priest? Maybe a president?",
+  stack: "RUBY ON RAILS | JS (ES6) | PSQL",
+  url: "http://domyjib.herokuapp.com",
+  photo: Rails.root.join("app/assets/images/domyjob.png").open
+  })
+
+alcar = Project.create!({
+  name: "ALCAR",
+  description: "Car workshop webpage with CRM for content management.",
+  stack: "RUBY ON RAILS | JS (ES6) | PSQL",
+  url: "http://alcar.herokuapp.com",
+  photo: Rails.root.join("app/assets/images/alcar.png").open
+  })

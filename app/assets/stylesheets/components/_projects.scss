@@ -1,0 +1,29 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  opacity: 0;
+  border: 1px $mint solid;
+  border-radius: 3px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.project-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+.project-description {
+  margin-bottom: 40px;
+}
+
+.project-stack {
+  font-size: 16px;
+}

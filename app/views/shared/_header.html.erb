@@ -5,10 +5,18 @@
     <h2><%= @subtitle %></h2>
     <% end %>
     <ul class="nav">
-
+      <% unless current_page?(root_path) %>
+      <li class="nav-btn"><%= link_to "< back", root_path %></li>
+      <% end %>
+      <% unless current_page?(whoami_path) %>
       <li class="nav-btn"><%= link_to "who am I", whoami_path %></li>
+      <% end %>
+      <% unless current_page?(projects_path) %>
       <li class="nav-btn"><%= link_to "projects", projects_path %></li>
+      <% end %>
+      <% unless current_page?(contact_path) %>
       <li class="nav-btn"><%= link_to "contact", contact_path %></li>
+      <% end %>
     </ul>
   </div>
 </div>
