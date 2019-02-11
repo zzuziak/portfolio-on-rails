@@ -13,3 +13,13 @@
   color: $dark-gray;
   font-size: 50px;
 }
+
+@media(max-width: 720px) {
+  .carousel-control-prev .fas {
+    font-size: 30px !important;
+  }
+
+  .carousel-control-next .fas {
+    font-size: 30px !important;
+  }
+}
