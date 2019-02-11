@@ -11,7 +11,7 @@ Project.destroy_all
 
 fullstack = Role.create!({
 name: "fullstack developer",
-description: "I like to create comprehensive products on my own and also work as a part of the team on bigger projects."
+description: "I like to create comprehensive products on my own and also work as a part of the team on bigger projects. I'm a quicklearner with experience covering RoR, Python, Javascript, PSQL, eager to always learn more."
 })
 
 manager = Role.create!({
@@ -27,6 +27,11 @@ sport = Role.create!({
 doer = Role.create!({
     name: "doer.",
     description: "Coming up with new ideas, organizing people to do things together, planning events, simplifying life and looking for valuable people. I just need to do things, I’ll be happy to do something with you."
+    })
+
+teacher = Role.create!({
+    name: "teacher",
+    description: "From time to time I work as a Teacher Assistant at Le Wagon helping students to conquer their daily challenges. Moreover you can also find me giving workshops on programming basics."
     })
 
 travelfit = Project.create!({
