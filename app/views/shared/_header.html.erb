@@ -1,6 +1,9 @@
 <div class="header">
   <div class="header-info-nav">
     <h1 class="header-text"><%= @header %></h1>
+    <% if current_page?(root_path) %>
+    <h2 class="col-xs-10 offset-xs-1 col-md-8 offset-md-2 role-typed text-right">I'm a <span id="role-typed-text"></span></h2>
+    <% end %>
     <% if @subtitle %>
     <h2><%= @subtitle %></h2>
     <% end %>
