@@ -52,7 +52,7 @@ domyjob = Project.create!({
 
 alcar = Project.create!({
   name: "ALCAR",
-  description: "Car workshop webpage with CRM for content management.",
+  description: "Car workshop webpage with CMS for content management.",
   stack: "RUBY ON RAILS | JS (ES6) | PSQL",
   url: "http://alcar.herokuapp.com",
   photo: Rails.root.join("app/assets/images/alcar.png").open
