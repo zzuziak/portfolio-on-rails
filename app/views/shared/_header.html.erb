@@ -11,9 +11,7 @@
       <% unless current_page?(whoami_path) %>
       <li class="nav-btn"><%= link_to "who am I", whoami_path %></li>
       <% end %>
-      <% unless current_page?(projects_path) %>
-      <li class="nav-btn"><%= link_to "projects", projects_path %></li>
-      <% end %>
+      <li class="nav-btn"><a href="<%= root_path %>#projects">projects</a></li>
       <% unless current_page?(contact_path) %>
       <li class="nav-btn"><%= link_to "contact", contact_path %></li>
       <% end %>
