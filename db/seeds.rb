@@ -46,7 +46,7 @@ domyjob = Project.create!({
   name: "DO MY JOB",
   description: "Try any job you'd like. Pilot? Priest? Maybe a president?",
   stack: "RUBY ON RAILS | JS (ES6) | PSQL",
-  url: "http://domyjob.herokuapp.com",
+  url: "http://do-my-job.herokuapp.com",
   photo: Rails.root.join("app/assets/images/domyjob.png").open
   })
 
