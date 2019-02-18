@@ -3,7 +3,7 @@ function ping() {
   if (now >= 7 && now <= 22) {
       var http = require("http");
       setInterval(function() {
-      http.get("https://portfolio-zuza.herokuapp.com");
+      http.get("https://zuzazuber.com");
     }, 300000);
   }
 }
