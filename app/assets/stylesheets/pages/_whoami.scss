@@ -13,8 +13,16 @@
   border-radius: 3px;
 }
 
+.whoami-div {
+  display: flex;
+  justify-content: center;
+}
 @media(max-width: 720px) {
   .whoami-pic {
     height: 250px;
+  }
+
+  .whoami-desc {
+    margin-right: 0;
   }
 }

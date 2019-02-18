@@ -35,3 +35,21 @@
   border-top: 2px solid $mint;
   border-bottom: 2px solid $mint;
 }
+
+@media(max-width: 1024px){
+  .project-description {
+    font-size: 16px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .project-stack {
+    font-size: 14px;
+  }
+
+  .project-card {
+    padding: 30px 10px 10px 10px;
+  }
+}
