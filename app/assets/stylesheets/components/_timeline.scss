@@ -1,0 +1,139 @@
+#timeline {
+  background-color: white;
+  border-top: 3px solid $mint;
+  border-bottom: 3px solid $mint;
+  margin-top: 150px;
+  height: 10px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 200px;
+  //box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;
+  .inside {
+    position: absolute;
+    height: 4px;
+    background-color: rgba(142, 225, 221, 0.6);
+    width: 0%;
+    left: 0;
+  }
+  .dot {
+    //box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;
+    z-index: 99;
+    transition : 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    &:nth-child(1){
+      left: 20%;
+      background-color: $lighter-gray;
+    }
+    &:nth-child(2){
+      left: 40%;
+      background-color: $lighter-gray;
+    }
+    &:nth-child(3){
+      left: 60%;
+      background-color: $lighter-gray;
+    }
+    &:nth-child(4){
+      left: 80%;
+      background-color: $mint;
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      p {
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    span {
+      display: inline-block;
+      margin-top: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    p {
+      display: inline-block;
+      margin-top: 40px;
+      width: 200px;
+      font-size: 14px;
+    }
+  }
+}
+
+article {
+  display: none;
+  position: relative;
+  top: 30px;
+  max-width : 50px;
+  background-color: #fff;
+  padding: 20px;
+  margin: auto;
+  date {
+    display: block;
+    text-align: right;
+  }
+  h3 {
+    padding: 10px 0;
+    border-bottom: solid $dark-gray 2px;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 130%;
+  }
+}
+div.mask {
+  display: none;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 99999;
+	article {
+    position: relative;
+    top: -100%;
+    margin-top: 50px;
+    max-width : 960px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    date {
+      display: block;
+      text-align: right;
+    }
+    h3 {
+      padding: 10px 0;
+      border-bottom: solid $mint 2px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-size: 40px;
+    }
+    p {
+      line-height: 130%;
+      font-size: 20px;
+      padding: 40px;
+    }
+  }
+}
+
+.modal {
+  height: auto;
+}

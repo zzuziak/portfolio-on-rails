@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     @roles = Role.all
     @header = "Hi, I'm Zuza. I like to do things."
     @projects = Project.all
-
+    @experiences = Experience.all
   end
 
   def whoami

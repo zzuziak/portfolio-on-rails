@@ -1,0 +1,34 @@
+<div class="row row-no-padding" id="projects">
+	<div class="col-xs-12 col-md-8 offset-md-2">
+		<h2 class="text-left"> >> the story is...</h2>
+	</div>
+</div>
+<div id="timeline">
+	<% @experiences.each do |e| %>
+	<div class="dot" id="<%= e.name %>">
+		<span></span>
+		<p class="ex-title"><%= e.title %></p>
+	</div>
+	<% end %>
+  <div class="dot last" id="four">
+		<span></span>
+		<p>Let's connect!</p>
+	</div>
+  <div class="inside"></div>
+</div>
+
+<!-- Modals -->
+
+<% @experiences.each do |e| %>
+	<article class='modal <%= e.name %>'>
+	  <date><%= e.date %></date>
+	  <h3><%= e.title %></h3>
+	  <%= simple_format(e.description) %>
+	</article>
+<% end %>
+
+<article class='modal four'>
+  <date>03/02 - 1992</date>
+  <h3>Mais pourquoi?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+</article>
