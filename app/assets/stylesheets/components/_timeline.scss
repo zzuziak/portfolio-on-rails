@@ -110,7 +110,7 @@ div.mask {
     top: -100%;
     margin-top: 50px;
     max-width : 960px;
-    height: 50vh;
+    min-height: 400px;
     background-color: #fff;
     padding: 20px;
     margin: auto;
@@ -128,7 +128,12 @@ div.mask {
     }
     p {
       line-height: 130%;
+      font-size: 20px;
       padding: 40px;
     }
   }
+}
+
+.modal {
+  height: auto;
 }

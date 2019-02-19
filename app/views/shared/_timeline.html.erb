@@ -23,7 +23,7 @@
 	<article class='modal <%= e.name %>'>
 	  <date><%= e.date %></date>
 	  <h3><%= e.title %></h3>
-	  <p><%= simple_format(e.description) %></p>
+	  <%= simple_format(e.description) %>
 	</article>
 <% end %>
 

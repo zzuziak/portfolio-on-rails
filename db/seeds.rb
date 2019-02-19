@@ -64,22 +64,37 @@ PR = Experience.create!({
   name: "one",
   title: "Public Relations",
   description: "My career started in the public relations industry. I worked as a Junior Account Executive responsbile for:
-  - press releases creation,
+  - writing PR publications and maintaining media relations ,
   - contact with the customers,
-  - acreditation for various events (PS4 Premiere, Nitro Circus)",
+  - acreditation for various events (PS4 Premiere, Nitro Circus).
+
+  In general I'm really good with words and peoples relations",
   date: "2013"
   })
 
 CTC = Experience.create!({
   name: "two",
-  title: "Concept To Consumer",
-  description: "Adidas universe",
+  title: "Product Management",
+  description: "Managaing Reebok Classic - <strong>and I still haven't bought any other brand.</strong><br>
+  I was a Concept to Consumer Mechandising Manager absolutely in love with my products who was responsible for Reebok Classic footwear and apparel in the Central East Europe.
+  What does it mean?
+  - range management in terms of product choice, pricing, distribution, marketing priorities,
+  - comprehensive presentations and handovers for my markets,
+  - being a part of multiple teams (european, local),
+  - overlooking the category in 7 countries with 7 different languages and 4 different currencies,
+  - close cooperation with other departments including sales, marketing, finance, etc.<br>
+  After few years it was high time for me to learn something new and see how it is to live in a different country.<br>
+  ...so I moved to Berlin for a coding bootcamp!",
   date: "2014-2018"
   })
 
 Fullstack = Experience.create!({
   name: "three",
   title: "Fullstack developer",
-  description: "Bootcamp bang, fullstack @ kiwi",
+  description: "From marketing/product manager to coding? <strong>Why not?</strong>
+  <br>
+  I did a coding bootcamp with Le Wagon that introduced me to the coding world, Ruby on Rails to be precise. And I fell in love. Coding turned out to be something that brings me fulfilment and crazy satisfaction.<br>
+  I'm currently working as a Junior Fullstack Developer. My daily stack includes <strong> Python, JS, PSQL.</strong> APIs are my best friends, including 3rd party integrations of course.<br>
+  In my spare time I work on side projects such as this site.",
   date: "as of Nov 2018"
   })
