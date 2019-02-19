@@ -5,3 +5,5 @@ loadDynamicBannerText();
 
 import { ping } from '../components/ping';
 ping();
+
+import { timeline } from '../components/timeline';

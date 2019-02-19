@@ -8,6 +8,7 @@
 
 Role.destroy_all
 Project.destroy_all
+Experience.destroy_all
 
 fullstack = Role.create!({
 name: "fullstack developer",
@@ -56,4 +57,29 @@ alcar = Project.create!({
   stack: "RUBY ON RAILS | JS (ES6) | PSQL",
   url: "http://alcar.herokuapp.com",
   photo: Rails.root.join("app/assets/images/alcar.png").open
+  })
+
+
+PR = Experience.create!({
+  name: "one",
+  title: "Public Relations",
+  description: "My career started in the public relations industry. I worked as a Junior Account Executive responsbile for:
+  - press releases creation,
+  - contact with the customers,
+  - acreditation for various events (PS4 Premiere, Nitro Circus)",
+  date: "2013"
+  })
+
+CTC = Experience.create!({
+  name: "two",
+  title: "Concept To Consumer",
+  description: "Adidas universe",
+  date: "2014-2018"
+  })
+
+Fullstack = Experience.create!({
+  name: "three",
+  title: "Fullstack developer",
+  description: "Bootcamp bang, fullstack @ kiwi",
+  date: "as of Nov 2018"
   })
