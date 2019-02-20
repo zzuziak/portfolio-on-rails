@@ -47,6 +47,10 @@
       width: 60px;
       height: 60px;
       top: -30px;
+      color: $dark-gray;
+      &:hover {
+        text-decoration: none;
+      }
       p {
         margin-top: 50px;
         font-weight: bold;
@@ -75,6 +79,15 @@
   }
 }
 
+.title-modal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid $mint 2px;
+  align-items: center;
+  h3 {
+    border-bottom: none !important;
+  }
+}
 article {
   display: none;
   position: relative;
@@ -136,4 +149,15 @@ div.mask {
 
 .modal {
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .dot {
+    writing-mode: tb-rl;
+    align-items: unset !important;
+    text-align: left !important;
+    p {
+      height: 200px;
+    }
+  }
 }
