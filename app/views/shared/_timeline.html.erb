@@ -10,10 +10,10 @@
 		<p class="ex-title"><%= e.title %></p>
 	</div>
 	<% end %>
-  <div class="dot last" id="four">
+  <%= link_to contact_path, class:"dot last", id: "four" do %>
 		<span></span>
 		<p>Let's connect!</p>
-	</div>
+	<% end %>
   <div class="inside"></div>
 </div>
 
@@ -26,9 +26,3 @@
 	  <%= simple_format(e.description) %>
 	</article>
 <% end %>
-
-<article class='modal four'>
-  <date>03/02 - 1992</date>
-  <h3>Mais pourquoi?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
-</article>
