@@ -72,7 +72,7 @@
     }
     p {
       display: inline-block;
-      margin-top: 40px;
+      margin-top: 50px;
       width: 200px;
       font-size: 14px;
     }
@@ -151,7 +151,7 @@ div.mask {
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .dot {
     writing-mode: tb-rl;
     align-items: unset !important;
@@ -159,5 +159,20 @@ div.mask {
     p {
       height: 200px;
     }
+
+    &:nth-child(4) p {
+      margin-top: 70px !important;
+    }
   }
+
+  .modal {
+      h3 {
+        font-size: 28px !important;
+      }
+      p {
+        line-height: 130%;
+        font-size: 14px !important;
+        padding: 20px;
+      }
+    }
 }
